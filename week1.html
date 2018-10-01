@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<style>
+   table,td,th{
+    border-collapse: collapse;
+    border: solid 1px grey;
+    
+  }
+  th{background-color:  lightgrey;
+    width: 80px;
+     }
+  td{
+    width: 200px;
+    text-align: center;
+  }
+  table{
+    position: relative;
+    top:20px;
+    height: 300px;
+  }
+  .title{
+    position: relative;
+    left: 340px;
+    font-weight: bold
+  }
+</style>
+<body>
+    <div class="title">
+        运费详情
+       </div>
+  <table>
+    <tr>
+      <th>区域</th>
+      <th>寄达地</th>
+      <th>首重（元/1000g）</th>
+      <th>续重（元/1000g）</th>
+    </tr>
+    <tr>
+      <th rowspan="2">一区</th>
+      <td>浙江，上海，江苏</td>
+      <td>6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>江西，安徽</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>二区</th>
+      <td>吉林，黑龙江，云南</td>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>三区</th>
+      <td>新疆，西藏</td>
+      <td>15</td>
+      <td>10</td>
+    </tr>
+   </table>
+
+</body>
+    </html>
