@@ -10,7 +10,7 @@ int main(void)
 	printf("整数C："), scanf_s("%d", &C);
 
 	min = A;
-	if (B < min) min = B;
+	(B < min) min = B;
 	if (C < min) min = C;
 	printf("最小值是%d。\n", min);
 

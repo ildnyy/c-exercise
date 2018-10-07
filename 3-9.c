@@ -2,16 +2,17 @@
 
 int main(void)
 {
-	int n1, n2;
+	int  A, B, C, min;
 
-	puts("请输入两个整数。");
-	printf("整数1：");scanf_s("%d", &n1);
-	printf("整数2：");scanf_s("%d", &n2);
+	puts("请输入三个整数");
+	printf("整数A："), scanf_s("%d", &A);
+	printf("整数B："), scanf_s("%d", &B);
+	printf("整数C："), scanf_s("%d", &C);
 
-	(n1 == n2) ? puts("它们相等。") :puts("它们不相等。");
+	min = (A < B) ? A : B;
+	min = (C < min) ? C : min;
+	printf("最小值是%d。\n", min);
 
-	return 0;
 
+	return  0;
 }
-
-
