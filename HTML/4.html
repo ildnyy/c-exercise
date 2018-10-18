@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body{
+  border:blue solid thin;
+  height:800px
+}
+  .para1{
+    border:green solid thin;
+    position:relative;
+    top:40%;
+  }
+  .para2{
+    border:green solid thin;
+    position:relative;
+    top:50%
+  }
+  .pagination{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    top:100%
+  }
+  .pagination li {
+    display: inline;
+    line-height: 25px;
+    margin: 0 5px;
+  }
+  .pagination a {
+    color: black;
+    text-shadow: 1px 0 0 #101011;
+    padding: 0 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 #5a5b5c inset,0 1px 0 #080808;
+  }
+</style>
+
+<div class="para1">paragraph1</div>
+<div class="para2">paragraph2</div>
+<div class="pagination">
+  <ul>
+    <li><a href="#">Prev</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</div>
+</html>
