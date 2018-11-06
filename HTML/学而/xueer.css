@@ -5,21 +5,20 @@ body{
     padding: 0;
 }
 .head{
-    height:80px;
-    background:rgba(255,255,255,1);
+    height: 80px;
+    background: #FFFFFF;
 }
-.head .head-c{
-    width: 1500px;
+.head-c{
+    width: 1000px;
     height:80px;
     background:rgba(255,255,255,1);
     box-shadow:0px 2px 0px 0px rgba(238,238,238,1);
-    display: inline-flex;
+    display: flex;
     align-items: center;
     margin:0 auto;
-    margin-left: 400px;
 }
-.c1 .c2:hover{
-    background-color: #F44336
+.p2{
+    margin: 0 auto;
 }
 .c1 {
     width:40px;
@@ -29,7 +28,7 @@ body{
     font-weight:500;
     color:rgba(244,67,54,1);
     line-height:28px;
-    margin-left: 82px
+    margin-left: 82px;
 }
 .c2 {
     width:80px;
@@ -39,15 +38,18 @@ body{
     font-weight:500;
     color:rgba(102,102,102,1);
     line-height:28px;
-    margin-left: 70px
+    margin-left: 70px;
 }
-.c1 .c2:hover{
+.c1:hover{
     color:#F44336;
     border-top: 5px solid #F44336;
-    padding-top: 0;
+}
+.c2:hover{
+    color:#F44336;
+    border-top: 5px solid #F44336;
 }
 input{
-    width:245px;
+    width: 150px;
     height:30px;
     background:rgba(255,255,255,1);
     border:2px solid #F44336 ;
@@ -79,8 +81,6 @@ input{
     width:80px;
     height:36px;
     background:rgba(244,67,54,1);
-    position: absolute;
-    left:1103px;
 }
 .c5 img{
     width:25px;
@@ -89,20 +89,20 @@ input{
     left: 29px; 
     top:5px;
 }
+.all{
+    width: 1000px;
+    margin: 0 auto;
+}
 .mid img{
     width:1000px;
     height:350px;
-    margin: 0 auto;
-    padding-left: 400px;
 }
 .box1{
     width:1000px;
     height:400px;
     background:rgba(255,255,255,1);
     box-shadow:0px 2px 0px 0px rgba(234,234,234,1);
-    margin-left: 400px;
-    display: inline-block;
-    justify-content: center;
+    margin-top: -5px;
 }
 .son{
     width: 220px;
@@ -128,6 +128,10 @@ ul{
     height: 137px;
     margin-left: 60px;
     margin-top: 40px;
+    border-left: 1px solid #EAEAEA;
+}
+.no{
+    border-left: 0px;
 }
 a{
     text-decoration: none;
@@ -149,7 +153,7 @@ a p{
     margin-bottom: 48px;
     line-height: 25px;
 }
-a  :hover{
+ul a:hover{
     color: red;
 }
 .box3{
@@ -157,9 +161,8 @@ a  :hover{
     height:355px;
     background:rgba(255,255,255,1);
     box-shadow:0px 2px 0px 0px rgba(234,234,234,1);
-    display: inline-block;
+    display: block;
     margin-top: 10px;
-    margin-left: 400px;
 }
 .headline1{
     width:108px;
@@ -212,6 +215,7 @@ a  :hover{
     line-height:67px;
     text-align: center;
     text-decoration: underline;
+    margin: 0 auto;
     margin-left: 38px;
     margin-right: 44px;
     margin-bottom: 5px;
@@ -255,7 +259,6 @@ a  :hover{
     height:410px;
     background:rgba(255,255,255,1);
     box-shadow:0px 2px 0px 0px rgba(234,234,234,1);
-    margin-left: 400px;
     margin-top: 10px;
 }
 .line1{
@@ -309,7 +312,7 @@ a  :hover{
     background-color: red; 
 }
 .box5{
-    width: 1900px;
+    width: 100%;
     height:120px;
     background:rgba(51,51,51,1);
     box-shadow:0px -2px 0px 0px rgba(238,238,238,1);
@@ -320,26 +323,26 @@ a  :hover{
     height:31px;
     position: relative;
     top:31px;
-    margin-left: 900px
+    margin: 0 auto;
 }
 .line3{
     width:300px;
     height:2px;
     background: #9B9B9B;
-    margin-left: 780px;
+    margin: 0 auto;
     margin-top: 38px
 }
 .text1,.text2, .text3,.text4{
     font: 14px PingFangSC;
     color: #9B9B9B;
-    display: inline-block;
+    display: block;
 }
 .text1{
-    margin-left: -22px;
-    margin-right: 12px
+    margin-left: 10px;
+    margin-right: 12px;
 }
 .text2{
-    margin-right: 12px
+    margin-right: 12px;
 }
 .text{
     display: flex;
@@ -352,5 +355,5 @@ a  :hover{
     height:15px;
     background:rgba(234,90,112,1);
     border-radius:2px;
-    margin-right: 12px
+    margin-right: 12px;
 }
