@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-int main(void){
+int main(void) {
 	int a[100][100];
-	int i,j;
+	int i, j;
 	int T;
 
 	scanf_s("%d", &T);
@@ -13,10 +13,10 @@ int main(void){
 	}
 	for (i = 0;i < T;i++) {
 		if (a[i][0] + a[i][1] > a[i][2]) {
-			printf("Case #%d:ture\n", i+1);
+			printf("Case #%d:ture\n", i + 1);
 		}
 		else
-			printf("Case #%d:fales\n", i+1);
+			printf("Case #%d:fales\n", i + 1);
 	}
 
 	return 0;
