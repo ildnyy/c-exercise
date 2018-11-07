@@ -1,4 +1,5 @@
 body{
+    min-width: 1440px;
     height:1835px;
     background:rgba(244,244,244,1);
     margin: 0;
@@ -17,85 +18,84 @@ body{
     align-items: center;
     margin:0 auto;
 }
-.p2{
-    margin: 0 auto;
-}
-.c1 {
+.t1 {
     width:40px;
-    height:28px;
+    height: 80px;
     font-size:20px;
     font-family:PingFangSC-Medium;
     font-weight:500;
     color:rgba(244,67,54,1);
-    line-height:28px;
-    margin-left: 82px;
+    line-height: 80px;
+    margin: 0 auto;
 }
-.c2 {
+.t2 {
     width:80px;
-    height:28px;
+    height:80px;
     font-size:20px;
     font-family:PingFangSC-Medium;
     font-weight:500;
     color:rgba(102,102,102,1);
-    line-height:28px;
-    margin-left: 70px;
+    line-height:80px;
+    margin: 0 auto;
 }
-.c1:hover{
+.t1:hover{
     color:#F44336;
     border-top: 5px solid #F44336;
 }
-.c2:hover{
+.t2:hover{
     color:#F44336;
     border-top: 5px solid #F44336;
 }
 input{
-    width: 150px;
+    width: 245px;
     height:30px;
     background:rgba(255,255,255,1);
     border:2px solid #F44336 ;
-    margin-left: 116px
+    margin:0 auto;
 }
 .p1{
-    margin-left: 100px
+    margin: 0 auto;
 }
-.c3{
-    width:90px;
-    height:30px;
-    background:rgba(29,192,145,1);
-    border:0px solid;
-    text-align: middle;
-    margin-left: 20px
+.t3{
+    width:80px;
+    height:36px;
+    background:rgba(244,67,54,1);
+    margin-left: -35px;
+    margin-right: 57px;
 }
-.c4{
+.t3 img{
+    width:25px;
+    height:25px;
+    position: relative;
+    left: 30px;
+    top: 8px;
+}
+.t4{
     width:38px;
     height:20px;
     font-size:14px;
     font-family:PingFangSC-Medium;
     font-weight:500;
     color:rgba(255,255,255,1);
-    position: relative;
-    top: 5px;
-    left: 26px;
+    line-height: 30px;
 }
-.c5{
-    width:80px;
-    height:36px;
-    background:rgba(244,67,54,1);
-}
-.c5 img{
-    width:25px;
-    height:25px;
-    position: relative;
-    left: 29px; 
-    top:5px;
+.t5{
+    width:90px;
+    height:30px;
+    background:rgba(29,192,145,1);
+    border:0px solid rgba(29,192,145,1);
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 0px;
 }
 .all{
     width: 1000px;
     margin: 0 auto;
 }
 .mid img{
-    width:1000px;
+    width: 1000px;
     height:350px;
+    margin: 0 auto;
 }
 .box1{
     width:1000px;
@@ -103,12 +103,16 @@ input{
     background:rgba(255,255,255,1);
     box-shadow:0px 2px 0px 0px rgba(234,234,234,1);
     margin-top: -5px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
-.son{
+.bigframe{
     width: 220px;
     height: 400px;
     margin-top: 40px;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
 }
 .circle{
     border-radius: 48px;
@@ -120,15 +124,18 @@ input{
     color: #1DC091;
     text-align: center;
     line-height: 96px;
-    margin-left: 85px;
+    margin: 0 auto;
+    position: relative;
+    top:40px;
 }
 ul{
-    display: inline-block;
+    display: block;
     width: 260px;
     height: 137px;
-    margin-left: 60px;
-    margin-top: 40px;
     border-left: 1px solid #EAEAEA;
+    margin: 0 auto;
+    position: relative;
+    top:80px;
 }
 .no{
     border-left: 0px;
@@ -152,17 +159,24 @@ a p{
     font-size: 30px;
     margin-bottom: 48px;
     line-height: 25px;
+    margin: 0 auto;
+    position: relative;
+    top:110px;
 }
 ul a:hover{
     color: red;
 }
-.box3{
+.box2{
     width:1000px;
     height:355px;
     background:rgba(255,255,255,1);
     box-shadow:0px 2px 0px 0px rgba(234,234,234,1);
     display: block;
     margin-top: 10px;
+}
+.box2-c{
+    margin: 0 auto;
+    width: 713px;
 }
 .headline1{
     width:108px;
@@ -173,7 +187,7 @@ ul a:hover{
     color:rgba(102,102,102,1);
     line-height:25px;
     margin: 0 auto;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 .headline2{
     width:230px;
@@ -186,57 +200,53 @@ ul a:hover{
     margin: 0 auto;
     margin-bottom: 21px
 }
-.first{
+.firstrow{
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-left: 150px;
 }
-.frame{
+.frame1{
     width:140px;
     height:105px;
     border:2px solid #1DC091 ;
     text-align: center;
 }
-.frame:hover{
-    background-color: #1DC091 
+.frame1:hover{
+    background-color: #1DC091;
 }
-.frame p{
+.frame1 a:hover{
+    color: #FFFFFF;
+}
+.frame1 p{
     position: relative;
     top:31px;
 }
-.num{
+.num1{
     width:58px;
-    height:67px;
+    height:105px;
     font-size:48px;
     font-family:PingFangSC-Light;
     font-weight:300;
     color:rgba(244,67,54,1);
-    line-height:67px;
+    line-height:105px;
     text-align: center;
     text-decoration: underline;
     margin: 0 auto;
-    margin-left: 38px;
-    margin-right: 44px;
-    margin-bottom: 5px;
 }
-.second{
+.secondrow{
     display: flex;
-    flex-wrap: wrap;
     margin: 0 auto;
-    margin-left: 196px;
 }
 .frame2{
     width:140px;
     height:105px;
     border:2px solid #1DC091 ;
     text-align: center;
-    margin-left: 38px;
-    margin-right: 44px;
     margin-top: -2px;
 }
 .frame2:hover{
     background-color: #1DC091 
+}
+.frame2 a:hover{
+    color: #FFFFFF;
 }
 .frame2 p{
     position: relative;
@@ -244,18 +254,18 @@ ul a:hover{
 }
 .num2{
     width:58px;
-    height:67px;
+    height:105px;
     font-size:48px;
     font-family:PingFangSC-Light;
     font-weight:300;
     color:rgba(244,67,54,1);
-    line-height:67px;
+    line-height:105px;
     text-align: center;
     text-decoration: underline;
-    margin-top: 20px;
+    margin: 0 auto;
 }
-.box4{
-    width:1000px;
+.box3{
+    width: 1000px;
     height:410px;
     background:rgba(255,255,255,1);
     box-shadow:0px 2px 0px 0px rgba(234,234,234,1);
@@ -285,7 +295,9 @@ ul a:hover{
     margin-bottom: 63px;
 }
 .frame3{
-    margin-left: 127px
+    display: flex;
+    margin: 0 auto;
+    padding-left: 127px;
 }
 .smallbox{
     width:175px;
@@ -294,7 +306,6 @@ ul a:hover{
     opacity:0.7;
     display: inline-block;
     text-align: center;
-    margin: 0 auto;
     margin-right: 15px;
 }
 .frame3 p{
@@ -311,7 +322,11 @@ ul a:hover{
 .smallbox:hover{
     background-color: red; 
 }
-.box5{
+.footer{
+    width: 100%;
+    margin: 0 auto;
+}
+.box4{
     width: 100%;
     height:120px;
     background:rgba(51,51,51,1);
@@ -325,14 +340,14 @@ ul a:hover{
     top:31px;
     margin: 0 auto;
 }
-.line3{
+.transverseline{
     width:300px;
     height:2px;
     background: #9B9B9B;
     margin: 0 auto;
     margin-top: 38px
 }
-.text1,.text2, .text3,.text4{
+.text1,.text2, .text3{
     font: 14px PingFangSC;
     color: #9B9B9B;
     display: block;
@@ -341,16 +356,13 @@ ul a:hover{
     margin-left: 10px;
     margin-right: 12px;
 }
-.text2{
-    margin-right: 12px;
-}
 .text{
     display: flex;
     justify-content: center;
     margin-right: 12px;
     margin-top: 5px
 }
-.text3{
+.text2{
     width:3px;
     height:15px;
     background:rgba(234,90,112,1);
