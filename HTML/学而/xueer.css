@@ -21,9 +21,7 @@ body{
 .t1 {
     width:40px;
     height: 80px;
-    font-size:20px;
-    font-family:PingFangSC-Medium;
-    font-weight:500;
+    font: 500 20px PingFangSC-Medium;
     color:rgba(244,67,54,1);
     line-height: 80px;
     margin: 0 auto;
@@ -31,9 +29,7 @@ body{
 .t2 {
     width:80px;
     height:80px;
-    font-size:20px;
-    font-family:PingFangSC-Medium;
-    font-weight:500;
+    font: 500 20px PingFangSC-Medium;
     color:rgba(102,102,102,1);
     line-height:80px;
     margin: 0 auto;
@@ -60,8 +56,7 @@ input{
     width:80px;
     height:36px;
     background:rgba(244,67,54,1);
-    margin-left: -35px;
-    margin-right: 57px;
+    margin: 0 57px 0 -35px;
 }
 .t3 img{
     width:25px;
@@ -73,9 +68,7 @@ input{
 .t4{
     width:38px;
     height:20px;
-    font-size:14px;
-    font-family:PingFangSC-Medium;
-    font-weight:500;
+    font-weight:500 14px PingFangSC-Medium;
     color:rgba(255,255,255,1);
     line-height: 30px;
 }
@@ -136,6 +129,7 @@ ul{
     margin: 0 auto;
     position: relative;
     top:80px;
+    margin-left: 23px;
 }
 .no{
     border-left: 0px;
@@ -146,7 +140,7 @@ a{
 }
 a p{
     margin-top: 4px;
-    line-height: 5px
+    line-height: 5px;
 }
 .jia{
     border:1px solid #1DC091; 
@@ -154,10 +148,9 @@ a p{
     height: 25px;
     width: 25px;
     text-align: center;
-    margin-left: 150px;
+    margin: 0 0 48px 150px;
     color: #1DC091;
     font-size: 30px;
-    margin-bottom: 48px;
     line-height: 25px;
     margin: 0 auto;
     position: relative;
@@ -181,24 +174,22 @@ ul a:hover{
 .headline1{
     width:108px;
     height:25px;
-    font-size:18px;
-    font-family:PingFangSC-Medium;
-    font-weight:500;
+    font:500 18px PingFangSC-Medium;
     color:rgba(102,102,102,1);
     line-height:25px;
     margin: 0 auto;
-    padding-top: 30px;
+    position: relative;
+    top:30px;
 }
 .headline2{
     width:230px;
     height:17px;
-    font-size:12px;
-    font-family:PingFangSC-Medium;
-    font-weight:500;
+    font:500 12px PingFangSC-Medium;
     color:rgba(29,192,145,1);
     line-height:17px;
     margin: 0 auto;
-    margin-bottom: 21px
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 .firstrow{
     display: flex;
@@ -222,9 +213,7 @@ ul a:hover{
 .num1{
     width:58px;
     height:105px;
-    font-size:48px;
-    font-family:PingFangSC-Light;
-    font-weight:300;
+    font:300 48px PingFangSC-Light;
     color:rgba(244,67,54,1);
     line-height:105px;
     text-align: center;
@@ -255,9 +244,7 @@ ul a:hover{
 .num2{
     width:58px;
     height:105px;
-    font-size:48px;
-    font-family:PingFangSC-Light;
-    font-weight:300;
+    font:300 48px PingFangSC-Light;
     color:rgba(244,67,54,1);
     line-height:105px;
     text-align: center;
@@ -274,9 +261,7 @@ ul a:hover{
 .line1{
     width:108px;
     height:25px;
-    font-size:18px;
-    font-family:PingFangSC-Medium;
-    font-weight:500;
+    font:500 18px PingFangSC-Medium;
     color:rgba(102,102,102,1);
     line-height:25px;
     margin: 0 auto;
@@ -286,9 +271,7 @@ ul a:hover{
 .line2{
     width:204px;
     height:17px;
-    font-size:12px;
-    font-family:PingFangSC-Medium;
-    font-weight:500;
+    font:500 12px PingFangSC-Medium;
     color:rgba(29,192,145,1);
     line-height:17px;
     margin: 0 auto;
@@ -313,11 +296,11 @@ ul a:hover{
     top:31px;
 }
 .p3{
-    width: 60px;
+    width: 40px;
     height: 32px;
     margin-left: 375px;
     position: relative;
-    top:-16.5px
+    top:-16.5px;
 }
 .smallbox:hover{
     background-color: red; 
@@ -337,7 +320,7 @@ ul a:hover{
     width:62px;
     height:31px;
     position: relative;
-    top:31px;
+    top:34px;
     margin: 0 auto;
 }
 .transverseline{
@@ -353,14 +336,12 @@ ul a:hover{
     display: block;
 }
 .text1{
-    margin-left: 10px;
-    margin-right: 12px;
+    margin: 0 12px 0 10px;
 }
 .text{
     display: flex;
     justify-content: center;
-    margin-right: 12px;
-    margin-top: 5px
+    margin: 5px 12px 0 0;
 }
 .text2{
     width:3px;
