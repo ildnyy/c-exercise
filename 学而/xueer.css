@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 body{
     min-width: 1600px;
     height:1835px;
@@ -140,10 +143,6 @@ a{
     text-decoration: none;
     color: #333333;
 }
-a p{
-    margin-top: 4px;
-    line-height: 5px;
-}
 .jia{
     border:1px solid #1DC091; 
     border-radius: 50%;
@@ -186,7 +185,7 @@ ul li:hover{
     top:30px;
 }
 .headline2{
-    width:230px;
+    width:240px;
     height:17px;
     font:500 12px PingFangSC-Medium;
     color:rgba(29,192,145,1);
@@ -227,7 +226,7 @@ ul li:hover{
 }
 .num1{
     width:50px;
-    height: 48px;
+    height: 55px;
     font:300 48px PingFangSC-Light;
     color:rgba(244,67,54,1);
     text-align: center;
@@ -259,7 +258,7 @@ ul li:hover{
 }
 .num2{
     width:50px;
-    height:48px;
+    height:55px;
     font:300 48px PingFangSC-Light;
     color:rgba(244,67,54,1);
     text-align: center;
