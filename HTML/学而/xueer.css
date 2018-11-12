@@ -2,7 +2,7 @@
     margin: 0;
 }
 body{
-    min-width: 1600px;
+    min-width: 1000px;
     height:1835px;
     background:rgba(244,244,244,1);
     margin: 0;
@@ -102,8 +102,12 @@ input{
     box-shadow:0px 2px 0px 0px rgba(234,234,234,1);
     margin-top: -5px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+}
+.box1-c{
+    display: flex;
+    padding-left: 60px;
 }
 .bigframe{
     width: 220px;
@@ -128,7 +132,6 @@ input{
 }
 ul{
     display: block;
-    width: 260px;
     height: 137px;
     border-left: 1px solid #EAEAEA;
     margin: 0 auto;
@@ -151,7 +154,7 @@ a{
     text-align: center;
     color: #1DC091;
     font-size: 30px;
-    line-height: 28px;
+    line-height: 24px;
     margin: 0 auto;
     position: relative;
     top:110px;
