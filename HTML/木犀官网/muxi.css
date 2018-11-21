@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #152025;
+}
+.head{
+    min-width: 370px;
+    height: 6em;
+    background: #20353C;
+}
+.head-c{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.t1{
+    font-size: 2em;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(255,251,220,1);
+}
+.menu-icon{
+    width: 3rem;
+    height: 0.1rem;
+    border-top: 0.1rem solid #FFFBDC ;
+    border-bottom:0.1rem solid #FFFBDC;
+    background-color: #FFFBDC;
+    padding: 0.8rem 0;
+    background-clip:content-box;
+}
+.all{
+    min-width: 340px;
+    border-left: 0.1em solid #F5FBDC;
+    margin: 0 auto; 
+    margin-left: 30px;
+}
+.headline{
+    display: flex;
+}
+.muxi-one img{
+    width: 6em;
+    height: 6em;
+    margin: 2em 0 1em -2em;
+}
+.text-one{
+    height: 3.2em;
+    font-size: 1.6em;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(255,251,220,1);
+    line-height: 6em;
+    border-bottom: 0.6em solid lightblue;
+}
+ul{
+    height: 0.9em;
+    width: 3.5em;
+    font-weight:bold;
+    color:rgba(245,251,220,1);
+    margin-left: 0.9em;
+}
+.box1{
+    display: flex;
+    margin-left: 0.6em;
+    margin-top: 1em;
+}
+.frame{
+    border-radius: 5%;
+    background: #20353C;
+    margin-right: 2.6%;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    text-align: center;
+    background: grey;
+    color: #F5FBDC;
+    line-height: 80px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-top: 0.6em;
+}
+.introduction-one{
+    color: #F5FBDC;
+    width: 90%;
+    margin: 10px auto 10px 10px;
+    font-size: 10px;
+}
+.num{
+    border-bottom: 0.5em solid grey;
+    height: 0.9em;
+}
+.box2{
+    width:64%;
+    display: flex;
+    margin-top: 1em;
+    margin-left: 0.6em;
+}
+.end{
+    width: 4.0em;
+    margin-bottom: 5em;
+}
+.end li{
+    font-size: 1.4em;
+    width: 4.5em;
+    height: 0.9em;
+    margin-left: 0.2em;
+    margin-top: 1em;
+    border-bottom: 0.5em solid lightblue;
+}
