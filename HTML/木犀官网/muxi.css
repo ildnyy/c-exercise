@@ -37,6 +37,32 @@ body{
     margin: 0 auto; 
     margin-left: 30px;
 }
+.star1{
+    width: 0.2em;
+    position: absolute;
+    top: 14em;
+    left: 0;
+}
+.star2 img{
+    width: 0.8em;
+    position: absolute;
+    top: 15em;
+    left: 80%;
+}
+.star3 img{
+    width: 1.5em;
+    position: absolute;
+    top: 8.5em;
+    left: 8em;
+    opacity: 0.5;
+}
+.star4 img{
+    position: absolute;
+    width: 0.8em;
+    top: 10em;
+    left: 15em;
+    opacity: 0.5;
+}
 .headline{
     display: flex;
 }
@@ -72,14 +98,14 @@ ul{
     margin-right: 2.6%;
 }
 .circle{
-    width: 80px;
-    height: 80px;
+    width: 4.2em;
+    height: 4.2em;
     border-radius: 50%;
     border: 1px solid grey;
     text-align: center;
     background: grey;
     color: #F5FBDC;
-    line-height: 80px;
+    line-height: 4.2em;
     margin: 0 auto;
     font-size: 1.2em;
     margin-top: 0.6em;
@@ -88,7 +114,7 @@ ul{
     color: #F5FBDC;
     width: 90%;
     margin: 10px auto 10px 10px;
-    font-size: 10px;
+    font-size: 0.6em;
 }
 .num{
     border-bottom: 0.5em solid grey;
