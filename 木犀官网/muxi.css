@@ -92,13 +92,16 @@ ul{
 }
 .box1{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 0.6em;
     margin-top: 1em;
 }
 .frame{
+    width: 30%;
     border-radius: 5%;
     background: #20353C;
     margin-right: 2.6%;
+    margin-top: 10px;
 }
 .circle{
     width: 5rem;
@@ -127,7 +130,6 @@ ul{
     height: 0.9em;
 }
 .box2{
-    width:64%;
     display: flex;
     margin-top: 1em;
     margin-left: 0.6em;
