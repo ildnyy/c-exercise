@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 14px;
+}
+body{
+    background: #152025;
+}
+.head{
+    min-width: 370px;
+    height: 6em;
+    background: #20353C;
+}
+.head-c{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.t1{
+    font-size: 2em;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(255,251,220,1);
+}
+.menu-icon{
+    width: 3rem;
+    height: 0.1rem;
+    border-top: 0.15rem solid #FFFBDC ;
+    border-bottom:0.15rem solid #FFFBDC;
+    background-color: #FFFBDC;
+    padding: 0.8rem 0;
+    background-clip:content-box;
+}
+.all{
+    min-width: 340px;
+    border-left: 0.1em solid #F5FBDC;
+    margin: 0 auto; 
+    margin-left: 30px;
+}
+.star1{
+    width: 0.2em;
+    position: absolute;
+    top: 14em;
+    left: 0;
+}
+.star2 img{
+    width: 0.8em;
+    position: absolute;
+    top: 15em;
+    left: 80%;
+}
+.star3 img{
+    width: 1.5em;
+    position: absolute;
+    top: 8.5em;
+    left: 8em;
+    opacity: 0.5;
+}
+.star4 img{
+    position: absolute;
+    width: 0.8em;
+    top: 10em;
+    left: 15em;
+    opacity: 0.5;
+}
+.headline{
+    display: flex;
+}
+.muxi-one img{
+    width: 6em;
+    height: 6em;
+    margin: 2em 0 1em -2em;
+}
+.text-one{
+    height: 1.5rem;
+    font-size: 1.6rem;
+    font-family:SourceHanSansCN-Regular;
+    font-weight:400;
+    color:rgba(255,251,220,1);
+    margin-top: 4rem;
+    border-bottom: 0.6em solid lightblue;
+}
+ul{
+    height: 0.9rem;
+    width: 3.5rem;
+    font-weight:bold;
+    color:rgba(245,251,220,1);
+    margin-left: 1rem;
+}
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.6em;
+    margin-top: 1em;
+}
+.frame{
+    width: 30%;
+    border-radius: 5%;
+    background: #20353C;
+    margin-right: 2.6%;
+    margin-top: 10px;
+}
+.circle{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid grey;
+    text-align: center;
+    background: grey;
+    color: #F5FBDC;
+    line-height: 5rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+}
+.introduction-one{
+    color: #F5FBDC;
+    width: 90%;
+    margin: 0.5rem auto 0.5rem 0.5rem;
+    font-size: 0.8rem;
+}
+.introduction-one p{
+    margin-top: 0.5rem;
+}
+.num{
+    border-bottom: 0.5em solid grey;
+    height: 0.9em;
+}
+.box2{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 0.6em;
+}
+.end{
+    width: 4.0em;
+    margin-bottom: 5em;
+}
+.end li{
+    font-size: 1.4rem;
+    width: 6rem;
+    height: 1.2rem;
+    margin-left: 0.2rem;
+    margin-top: 1rem;
+    border-bottom: 0.5em solid lightblue;
+}
