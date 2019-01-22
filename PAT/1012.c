@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+    int m;
+    int A1 = 0, A2 = 0, A3 = 0, A4 = 0, A5 = 0;
+    int A2c = 0, A4count = 0;
+    
+    scanf("%d", &m);
+    for(int i = 0, n; i < m; i++){
+        scanf("%d", &n);
+        switch(n % 5){
+            case 0: A1 += n % 2 ? 0 : n;                                break;
+            case 1: A2c ++;if(A2c%2==0) A2-=n;else A2+=n;               break;
+            case 2: A3 ++;                                              break;
+            case 3: A4 += n; A4count ++;                                break;
+            case 4: A5 = n > A5? n : A5;                                break;
+        }
+    }
+    if(A1 == 0)     printf("N ");   else printf("%d ", A1);
+    if(A2c == 0)    printf("N ");   else printf("%d ", A2);
+    if(A3 == 0)     printf("N ");   else printf("%d ", A3);
+    if(A4 == 0)     printf("N ");   else printf("%.1f ", A4 * 1.0 / A4count);
+    if(A5 == 0)     printf("N");    else printf("%d", A5);
+    
+    return 0;
+}
