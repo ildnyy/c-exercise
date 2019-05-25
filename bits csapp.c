@@ -211,7 +211,9 @@ int isAsciiDigit(int x) {   //判断是否为ASCII表示的0~9，需要确定x的范围是否在0x3
  *   Rating: 3
  */
 int conditional(int x, int y, int z) {
-  return 2;
+  int mask = !x;  
+  mask = (mask << 31) >> 31;  
+  return (mask & z) | (~mask & y);  
 }
 /* 
  * isLessOrEqual - if x <= y  then return 1, else return 0 
@@ -220,8 +222,12 @@ int conditional(int x, int y, int z) {
  *   Max ops: 24
  *   Rating: 3
  */
-int isLessOrEqual(int x, int y) {
-  return 2;
+int isLessOrEqual(int x, int y) {  // 分类讨论两个数字的符号，如果符号不同，必然y最高位是0，x最高位是1，如果符号相同，直接做减法也不会溢出。 
+  int signx = (x>>31)&1;
+  int signy = (y>>31)&1;
+  int signdif = (!signy)&signx;
+  int signsam = (!(signx^signy))&(((x+(~y))>>31)&1);
+  return signdif|signsam;
 }
 //4
 /* 
@@ -233,7 +239,7 @@ int isLessOrEqual(int x, int y) {
  *   Rating: 4 
  */
 int logicalNeg(int x) {
-  return 2;
+  return ~(x|(~x+1))>>31&1;
 }
 /* howManyBits - return the minimum number of bits required to represent x in
  *             two's complement
@@ -248,7 +254,14 @@ int logicalNeg(int x) {
  *  Rating: 4
  */
 int howManyBits(int x) {
-  return 0;
+  int n = 0;
+  x ^= (x<<1);
+  n += ((!!(x&((~0)<<(n+16)))) << 4);
+  n += ((!!(x&((~0)<<(n+8)))) << 3);
+  n += ((!!(x&((~0)<<(n+4)))) << 2);
+  n += ((!!(x&((~0)<<(n+2)))) << 1);
+  n += (!!(x&((~0)<<(n+1))));
+  return n+1;
 }
 //float
 /* 
@@ -262,8 +275,14 @@ int howManyBits(int x) {
  *   Max ops: 30
  *   Rating: 4
  */
-unsigned floatScale2(unsigned uf) {
-  return 2;
+unsigned floatScale2(unsigned uf) { //考虑原数为非规格化小数或0时，处理小数部分if(exp_ == 0) return (uf<<1)|s_;。若为NaN或INF时if(exp_ == 255) return uf;，直接返回。若结果，即指数加一++exp_,为INF时，保证其不为NaN，即小数部分全为0，if(exp_ == 255) return 0x7f800000|s_;。
+  int exp_ = (uf&0x7f800000)>>23;
+  int s_ = uf&0x80000000;
+  if(exp_ == 0) return (uf<<1)|s_;
+  if(exp_ == 255) return uf;
+  ++exp_;
+  if(exp_ == 255) return 0x7f800000|s_;
+  return (uf&0x807fffff)|(exp_<<23);
 }
 /* 
  * floatFloat2Int - Return bit-level equivalent of expression (int) f
@@ -277,8 +296,21 @@ unsigned floatScale2(unsigned uf) {
  *   Max ops: 30
  *   Rating: 4
  */
-int floatFloat2Int(unsigned uf) {
-  return 2;
+int floatFloat2Int(unsigned uf) { //先将浮点数分成三段，符号部分s_ = uf>>31，指数大小exp_ = ((uf&0x7f800000)>>23)-127，获取小数部分，并补上浮点数缺省的1，frac_ = (uf&0x007fffff)|0x00800000。 
+  int s_    = uf>>31;
+  int exp_  = ((uf&0x7f800000)>>23)-127;
+  int frac_ = (uf&0x007fffff)|0x00800000; 
+  if(!(uf&0x7fffffff)) return 0;
+  
+  if(exp_ > 31) return 0x80000000;
+  if(exp_ < 0) return 0;
+  
+  if(exp_ > 23) frac_ <<= (exp_-23);
+  else frac_ >>= (23-exp_);
+
+  if(!((frac_>>31)^s_)) return frac_;
+  else if(frac_>>31) return 0x80000000;
+  else return ~frac_+1;
 }
 /* 
  * floatPower2 - Return bit-level equivalent of the expression 2.0^x
@@ -293,6 +325,10 @@ int floatFloat2Int(unsigned uf) {
  *   Max ops: 30 
  *   Rating: 4
  */
-unsigned floatPower2(int x) {
-    return 2;
+unsigned floatPower2(int x) {  // 考虑特殊情况，指数exp<-127和 exp>128，分别返回0和0x7f800000。 
+      if(x<-127) return 0;
+	  if(x>128) return 0x7f800000;
+	  x += 127;
+	  x = x << 23;
+	  return x;
 }
