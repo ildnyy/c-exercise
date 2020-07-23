@@ -19,6 +19,19 @@ test('Read file synchronously', t => {
 
 import {readFile} from 'fs';
 
-test.cb('Read file via callback', t => { // call t.end() once you are finished
-  // EXERCISE: Implement this test
+test.cb('Read file via callback', t => {
+  readFile(testFilePath,{encoding:'utf8'},
+  function(erro,text){
+    if(erro){
+      console.log(erro)
+      t.end(erro)
+      return;
+    }
+    else{
+      text=text.trim()
+      assert.equal(text,'The test data')
+      t.end()
+    }
+  }
+  )
 });
