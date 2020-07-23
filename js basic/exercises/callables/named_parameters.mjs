@@ -1,7 +1,3 @@
-export function handleNamedParameters(params) {
-    params = params || {};
-    var x = params.x || 0;
-    var y = params.y || 0;
-    var color = params.color || 'black';
+export function handleNamedParameters({x=0,y=0,color='black'}={}) {
     return [x, y, color];
 }
