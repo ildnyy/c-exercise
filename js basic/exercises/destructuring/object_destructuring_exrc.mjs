@@ -13,8 +13,9 @@ const obj = {
 
 test('Properties of the object', t => {
   // BEGIN: use destructuring here
-  const first = obj.first;
-  const last = obj.last;
+  // const first = obj.first;
+  // const last = obj.last; 
+  const {first,last}=obj;
   // END: use destructuring here
   
   assert.equal(first, 'Jane');
@@ -25,11 +26,12 @@ test('Properties of a property descriptor', t => {
   const desc = Object.getOwnPropertyDescriptor(obj, 'first');
 
   // BEGIN: use destructuring here
-  const value = desc.value;
-  const writable = desc.writable;
-  const enumerable = desc.enumerable;
-  const configurable = desc.configurable;
+  // const value = desc.value;
+  // const writable = desc.writable;
+  // const enumerable = desc.enumerable;
+  // const configurable = desc.configurable;
   // END: use destructuring here
+  let {value,writable,enumerable,configurable} = desc;
   
   assert.equal(value, 'Jane');
   assert.equal(writable, true);
